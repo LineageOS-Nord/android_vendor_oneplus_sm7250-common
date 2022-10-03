@@ -10,7 +10,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_ODM)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service \
-    vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.pixelworks.hardware.feature.irisfeature-service \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/hw/vendor.qti.secure_element@1.2-service:$(TARGET_COPY_OUT_ODM)/bin/hw/vendor.qti.secure_element@1.2-service \
     vendor/oneplus/sm7250-common/proprietary/odm/bin/init.oplus.fingerprints.sh:$(TARGET_COPY_OUT_ODM)/bin/init.oplus.fingerprints.sh \
@@ -20,7 +19,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_ODM)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc \
-    vendor/oneplus/sm7250-common/proprietary/odm/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.pixelworks.hardware.feature.irisfeature-service.rc \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.qti.secure_element@1.2-service.rc \
     vendor/oneplus/sm7250-common/proprietary/odm/etc/izat.conf:$(TARGET_COPY_OUT_ODM)/etc/izat.conf \
@@ -348,16 +346,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/liboemcrypto.so:$(TARGET_COPY_OUT_ODM)/lib64/liboemcrypto.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/liboplus_service.so:$(TARGET_COPY_OUT_ODM)/lib64/liboplus_service.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/libormshalclient.so:$(TARGET_COPY_OUT_ODM)/lib64/libormshalclient.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirisIoctlWrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisIoctlWrapper.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisPCS.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwiriscalibrate.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwiriscalibrate.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisfeature.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirishalwrapper.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirispq.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirispq.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirisservice.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirisservice.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwirissoft.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwirissoft.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwsnapdragoncolor.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsnapdragoncolor.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/libpwsoftirisPCS.so:$(TARGET_COPY_OUT_ODM)/lib64/libpwsoftirisPCS.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/libwvhidl.so:$(TARGET_COPY_OUT_ODM)/lib64/libwvhidl.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_ODM)/lib64/mediadrm/libwvdrmengine.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.oplus.hardware.appradio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.appradio@1.0.so \
@@ -367,9 +355,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.oplus.hardware.oplusSensor@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.oplusSensor@1.0.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.oplus.hardware.orms@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.orms@1.0.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.oplus.hardware.radio@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.oplus.hardware.radio@1.0.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.0.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.display@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.display@1.1.so \
-    vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.pixelworks.hardware.feature@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.pixelworks.hardware.feature@1.0.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/oneplus/sm7250-common/proprietary/odm/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_ODM)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/oneplus/sm7250-common/proprietary/odm/vendor/etc/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_ODM)/vendor/etc/wifi/WCNSS_qcom_cfg.ini \
@@ -1254,8 +1239,6 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libperfgluelayer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfgluelayer.so \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libperfioctl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfioctl.so \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
-    vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libpwirisfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirisfeature.so \
-    vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libpwirishalwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpwirishalwrapper.so \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
     vendor/oneplus/sm7250-common/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
@@ -1467,10 +1450,7 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1-service-qti \
     android.hardware.neuralnetworks@1.3-service-qti-hta \
     android.hardware.neuralnetworks@1.3-service-qti \
-    manifest_oplus_osiesr \
     vendor.qti.gnss@4.0-service \
     manifest_android.hardware.drm@1.3-service.widevine \
     manifest_oplusSensor \
-    manifest_oplus_fingerprint \
-    vendor.pixelworks.hardware.display.iris-service \
-    vendor.pixelworks.hardware.feature.irisfeature-service
+    manifest_oplus_fingerprint
